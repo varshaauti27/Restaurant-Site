@@ -12,7 +12,8 @@ function clearErrors() {
 }
 
 function resetForm() {
-    clearErrors();
+    //clearErrors();
+	console.log("hiiii");
     document.forms["contactForm"]["inputName"].value = "";
 	document.forms["contactForm"]["inputName"].focus();
     document.forms["contactForm"]["inputEmail"].value = "";  
@@ -55,7 +56,7 @@ function validateItems() {
 		alert("Please enter Additional info for better understanding.");
 		return false;
 	}
-	
+	return false;
    /* if (num1 == "" || isNaN(num1)) {
         alert("Num1 must be filled in with a number.");
         document.forms["numberFun"]["num1"]
